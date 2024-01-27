@@ -1,3 +1,5 @@
+这个仓库是用来读代码的
+
 # Stable Diffusion web UI
 A browser interface based on Gradio library for Stable Diffusion.
 
