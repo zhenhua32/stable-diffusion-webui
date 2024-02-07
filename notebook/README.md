@@ -23,3 +23,14 @@ dataset_name = "huggan/smithsonian_butterflies_subset"
 dataset = load_dataset(dataset_name, split="train", cache_dir="./data/smithsonian_butterflies_subset")
 ```
 
+也可以使用命令行下载
+
+```bash
+export HF_ENDPOINT=https://hf-mirror.com
+
+# windows 上设置环境变量
+$env:HF_ENDPOINT="https://hf-mirror.com"
+
+huggingface-cli download --resume-download --local-dir-use-symlinks False stabilityai/stable-diffusion-2-1-base --local-dir model
+```
+
